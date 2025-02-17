@@ -49,7 +49,10 @@ const Home = () => {
             </ul>
           </div>
           <div className="flex gap-2 pb-10">
-            <div className="flex flex-col gap-4 bg-white rounded-lg mt-4 px-12 py-6 w-[44rem]">
+            <div
+              className="flex flex-col gap-4 bg-white rounded-l-lg mt-4 px-12 py-6 w-[44rem]"
+              style={{ clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)" }}
+            >
               <h1 className="text-[#FAAC1D] text-center text-[33px] font-bold">
                 Get Instant Qoute
               </h1>
@@ -72,7 +75,10 @@ const Home = () => {
                 Submit
               </button>
             </div>
-            <div className="bg-white rounded-lg mt-4 px-12 py-6 w-full ">
+            <div
+              className="bg-white rounded-r-lg mt-4 px-12 py-6 w-full "
+              style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 10% 100%)" }}
+            >
               <h4 className="text-[20px] tracking-[1px] font-semibold">
                 Hire British Experts
               </h4>
