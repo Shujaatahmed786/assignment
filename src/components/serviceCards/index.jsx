@@ -4,7 +4,7 @@ const ServiceCard = ({ title, subtitle, description, buttonText }) => {
   return (
     <div className="bg-white rounded-r-lg mt-4 px-12 py-6 w-full">
       <h4 className="text-[20px] tracking-[1px] font-semibold">{title}</h4>
-      <h1 className="text-[#FAAC1D] text-[30px] md:text-[45px] font-extrabold">
+      <h1 className="text-[#FAAC1D] text-[30px] md:text-[45px] max-w-[45rem] w-full font-extrabold">
         {subtitle}
       </h1>
       <p className="text-[17px] md:text-[27px] font-extrabold capitalize">

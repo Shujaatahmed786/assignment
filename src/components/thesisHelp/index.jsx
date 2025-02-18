@@ -2,16 +2,14 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import { list } from "@/data/list";
 import HeroSection from "../heroSection";
 import Services from "../services";
 import Fundamental from "../fundamental";
 import Hire from "../hire";
 import Refund from "../refund";
 import Working from "../working";
-import Footer from "../footer";
-import CopyRight from "../copyRight";
 import ServiceCard from "../serviceCards";
+import Navbar from "../navbar";
 
 const ThesisHelp = () => {
   const router = useRouter();
@@ -37,28 +35,7 @@ const ThesisHelp = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row bg-white rounded-lg py-4">
-            <ul className="flex flex-col md:flex-row px-12 justify-start gap-14 font-bold ">
-              <li className="cursor-pointer" onClick={() => router.push("/")}>
-                Home
-              </li>
-              <li
-                className="cursor-pointer"
-                onClick={() => router.push("/aboutUs")}
-              >
-                About Us
-              </li>
-              <li className="cursor-pointer">Thesis Help</li>
-              <li className="cursor-pointer">Dissertation Help</li>
-              <li className="cursor-pointer">Services</li>
-              <li
-                className="cursor-pointer"
-                onClick={() => router.push("/contact")}
-              >
-                Contact Us
-              </li>
-            </ul>
-          </div>
+          <Navbar />
           <div className="flex flex-col xl:flex-row gap-2 pb-10">
             <div
               className="flex flex-col gap-4 bg-white rounded-l-lg mt-4 px-12 py-6 w-full"
@@ -104,8 +81,7 @@ const ThesisHelp = () => {
         <Working />
         <Refund />
         <Services />
-        <Footer />
-        <CopyRight />
+  
       </div>
     </div>
   );

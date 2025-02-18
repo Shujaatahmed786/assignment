@@ -1,9 +1,10 @@
 import Image from "next/image";
+import CopyRight from "../copyRight";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white p-4">
-      <div className="flex flex-col md:flex-row text-center justify-between items-center space-y-4 px-32  md:py-6">
+    <div >
+      <div className="flex flex-col md:flex-row text-center bg-black text-white p-4 justify-between items-center space-y-4 px-32  md:py-6">
         <div>
           <div className="relative w-36 h-24">
             <Image
@@ -33,6 +34,7 @@ const Footer = () => {
           <h3>58 Naseby Road LU1 United Kingdom</h3>
         </div>
       </div>
+      <CopyRight />
     </div>
   );
 };
