@@ -8,6 +8,7 @@ import Services from "../services";
 import Fundamental from "../fundamental";
 import Hire from "../hire";
 import Refund from "../refund";
+import Working from "../working"
 
 const Home = () => {
   const router = useRouter();
@@ -106,10 +107,12 @@ const Home = () => {
       </div>
       <div>
         <HeroSection />
-        <Services />
+        {/* <Services /> */}
         <Fundamental />
         <Hire />
         <Refund />
+        <Working />
+        <Services />
       </div>
     </div>
   );
