@@ -3,21 +3,21 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="flex mt-16 gap-4 px-36">
-      <div className=" leading-[43px]">
+    <div className="flex flex-col items-center xl:flex-row mt-16 gap-4 px-4 md:px-36">
+      <div className=" leading-[43px] text-center md:text-start ">
         <h1 className="text-[30px] font-bold">Get Professional</h1>
-        <h1 className="text-[51px] font-bold text-[#faac1d]">
+        <h1 className="text-[30px] md:text-[51px] font-bold text-[#faac1d]">
           Dissertation Help
         </h1>
         <h1 className="text-[30px] font-bold">
           To Ease Your Academic Struggle.
         </h1>
-        <p className="max-w-[36rem] mt-4 w-full text-lg">
+        <p className=" w-full md:w-[36rem] mt-4 text-lg">
           Feeling overwhelmed by your dissertation or thesis? Do not go it
           alone! Our team of UK Thesis Helpers provides affordable and
           high-quality assistance throughout your academic journey.
         </p>
-        <p className="max-w-[38rem] w-full mt-10 text-lg">
+        <p className="  w-full md:w-[38rem] mt-10 text-lg">
           Stuck on your research proposal? We will help you craft a compelling
           topic aligned with your interests. Need a hand with your literature
           review? We will guide you in finding relevant sources and summarising
@@ -46,12 +46,12 @@ const HeroSection = () => {
         </div>
       </div>
       <div>
-        <div className="relative w-[35rem] h-[55rem] ">
+        <div className="relative w-24 h-24  md:w-[35rem] md:h-[55rem] ">
           <Image
             src="/assets/images/first-img.svg"
             fill
             alt="image"
-            className="object-contain"
+            className="object-fit"
           />
         </div>
       </div>

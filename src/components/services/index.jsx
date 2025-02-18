@@ -11,7 +11,7 @@ const Services = () => {
         Our expert assistance with top-notch quality standard and affordability
         on every service.
       </h2>
-      <div className="flex justify-center items-center text-center gap-12 mt-12">
+      <div className="flex flex-col md:flex-row justify-center items-center text-center gap-12 mt-12">
         {service.map((item, index) => (
           <div key={index} className="bg-white px-12 py-12">
             <div className="relative w-24 h-24  mb-4 mt-8">

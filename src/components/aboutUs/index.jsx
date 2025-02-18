@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import { list } from "@/data/list";
 import HeroSection from "../heroSection";
 import Services from "../services";
 import Fundamental from "../fundamental";
@@ -13,7 +12,7 @@ import Footer from "../footer";
 import CopyRight from "../copyRight";
 import ServiceCard from "../serviceCards";
 
-const Home = () => {
+const AboutUs = () => {
   const router = useRouter();
   return (
     <div>
@@ -39,22 +38,15 @@ const Home = () => {
           </div>
           <div className="flex flex-col md:flex-row bg-white rounded-lg py-4">
             <ul className="flex flex-col md:flex-row px-12 justify-start gap-14 font-bold ">
-              <li className="cursor-pointer" onClick={() => router.push("/")}>
-                Home
-              </li>
-              <li className="cursor-pointer">About Us</li>
+              <li className="cursor-pointer">Home</li>
               <li
                 className="cursor-pointer"
-                onClick={() => router.push("/thesisHelp")}
+                onClick={() => router.push("/aboutUs")}
               >
-                Thesis Help
+                About Us
               </li>
-              <li
-                className="cursor-pointer"
-                onClick={() => router.push("/dissertationHelp")}
-              >
-                Dissertation Help
-              </li>
+              <li className="cursor-pointer">Thesis Help</li>
+              <li className="cursor-pointer">Dissertation Help</li>
               <li className="cursor-pointer">Services</li>
               <li
                 className="cursor-pointer"
@@ -116,4 +108,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutUs;

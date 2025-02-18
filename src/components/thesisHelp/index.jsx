@@ -13,7 +13,7 @@ import Footer from "../footer";
 import CopyRight from "../copyRight";
 import ServiceCard from "../serviceCards";
 
-const Home = () => {
+const ThesisHelp = () => {
   const router = useRouter();
   return (
     <div>
@@ -42,19 +42,14 @@ const Home = () => {
               <li className="cursor-pointer" onClick={() => router.push("/")}>
                 Home
               </li>
-              <li className="cursor-pointer">About Us</li>
               <li
                 className="cursor-pointer"
-                onClick={() => router.push("/thesisHelp")}
+                onClick={() => router.push("/aboutUs")}
               >
-                Thesis Help
+                About Us
               </li>
-              <li
-                className="cursor-pointer"
-                onClick={() => router.push("/dissertationHelp")}
-              >
-                Dissertation Help
-              </li>
+              <li className="cursor-pointer">Thesis Help</li>
+              <li className="cursor-pointer">Dissertation Help</li>
               <li className="cursor-pointer">Services</li>
               <li
                 className="cursor-pointer"
@@ -93,9 +88,9 @@ const Home = () => {
             </div>
             <div>
               <ServiceCard
-                title="Hire British Experts"
-                subtitle="Thesis help online"
-                description="Conquer Your Thesis with Expert UK Support!"
+                title="Top Quality & On-Time Delivery"
+                subtitle="Hire To Do My Thesis"
+                description="By PhD Experts In UK"
                 buttonText="Whatsapp Now"
               />
             </div>
@@ -116,4 +111,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ThesisHelp;
